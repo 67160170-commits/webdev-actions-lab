@@ -3,15 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Pages Lab</title>
+  <title>67160170 | My Web Development Lab</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="card">
-    <h1>67160170_My Web Development Lab</h1>
-    <p>ชื่อ: Nonthapat  Wongkrueason| รหัสนิสิต: 67160170</p>
-    <p id="status">Ready to deploy</p>
-    <button id="helloBtn">Say Hello</button>
+
+    <header class="hero">
+      <h1>67160170_My Web Development Lab</h1>
+      <p class="student">ชื่อ: Nonthapat Wongkrueason | รหัสนิสิต: 67160170</p>
+      <p id="status">สวัสดีครับ ยินดีต้อนรับสู่หน้าเว็บของ Nonthapat</p>
+      <div class="actions">
+        <button id="helloBtn" type="button">Say Hello</button>
+        <button id="themeBtn" type="button" class="secondary" aria-pressed="false">🌙 Dark mode</button>
+      </div>
+    </header>
+
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About Me</h2>
+      <p>
+        นิสิตคณะวิทยาการสารสนเทศ มหาวิทยาลัยบูรพา อาศัยอยู่ที่บางแสน จังหวัดชลบุรี
+        สนใจการพัฒนาซอฟต์แวร์ ปัญญาประดิษฐ์ (AI/ML) และการตลาดดิจิทัล
+        กำลังฝึกสร้างเว็บไซต์และ deploy ผ่าน GitHub Pages ด้วย GitHub Actions
+      </p>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <ul class="skills">
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Python</li>
+        <li>PHP</li>
+        <li>FastAPI</li>
+        <li>MySQL</li>
+        <li>Git / GitHub</li>
+        <li>Google Colab</li>
+        <li>Streamlit</li>
+        <li>Google Ads / Keyword Planner</li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <ul class="contact">
+        <li>อีเมล: <a href="mailto:67160170@go.buu.ac.th">67160170@go.buu.ac.th</a></li>
+        <li>GitHub: <a href="https://github.com/67160170-commits/webdev-actions-lab" target="_blank" rel="noopener">github.com/67160170-commits/webdev-actions-lab</a></li>
+        <li>ที่อยู่: บางแสน, ชลบุรี</li>
+      </ul>
+    </section>
+
   </main>
   <script src="script.js"></script>
 </body>
