@@ -3,7 +3,7 @@ const helloBtn = document.querySelector('#helloBtn');
 const themeBtn = document.querySelector('#themeBtn');
 const root = document.documentElement;
 
-// ปุ่ม Say Hello: สลับข้อความสถานะ
+// ปุ่ม Say Hello: สลับข้อความสถานะและเล่นแอนิเมชันเด้งเบาๆ
 const messages = [
   'Hello from GitHub Pages!',
   'สวัสดีครับ! หน้านี้ deploy ด้วย GitHub Actions',
@@ -14,9 +14,12 @@ let msgIndex = 0;
 helloBtn.addEventListener('click', () => {
   statusEl.textContent = messages[msgIndex];
   msgIndex = (msgIndex + 1) % messages.length;
+  statusEl.classList.remove('pop');
+  void statusEl.offsetWidth; // รีเซ็ตแอนิเมชันให้เล่นซ้ำได้
+  statusEl.classList.add('pop');
 });
 
-// ปุ่ม Toggle Theme: สลับ Light/Dark และจำค่าไว้ในเบราว์เซอร์
+// ปุ่ม Toggle Theme: กลางวัน (พระอาทิตย์) / กลางคืน (พระจันทร์) และจำค่าไว้
 function applyTheme(theme) {
   root.setAttribute('data-theme', theme);
   const isDark = theme === 'dark';
@@ -25,19 +28,11 @@ function applyTheme(theme) {
 }
 
 function getSavedTheme() {
-  try {
-    return localStorage.getItem('theme');
-  } catch (e) {
-    return null;
-  }
+  try { return localStorage.getItem('theme'); } catch (e) { return null; }
 }
 
 function saveTheme(theme) {
-  try {
-    localStorage.setItem('theme', theme);
-  } catch (e) {
-    // ถ้าบันทึกไม่ได้ ก็ใช้งานต่อได้ตามปกติ
-  }
+  try { localStorage.setItem('theme', theme); } catch (e) { /* ใช้งานต่อได้ตามปกติ */ }
 }
 
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;

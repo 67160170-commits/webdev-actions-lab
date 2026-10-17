@@ -4,56 +4,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>67160170 | My Web Development Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500&family=Prompt:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="card">
 
-    <header class="hero">
-      <h1>67160170_My Web Development Lab</h1>
-      <p class="student">ชื่อ: Nonthapat Wongkrueason | รหัสนิสิต: 67160170</p>
-      <p id="status">สวัสดีครับ ยินดีต้อนรับสู่หน้าเว็บของ Nonthapat</p>
+  <header class="hero">
+    <div class="sun" aria-hidden="true"></div>
+
+    <div class="hero-text">
+      <h1>Nonthapat<br>Wongkrueason</h1>
+      <p class="student">67160170_My Web Development Lab<br>นิสิตคณะวิทยาการสารสนเทศ มหาวิทยาลัยบูรพา</p>
+      <p id="status" role="status">สวัสดีครับ ยินดีต้อนรับสู่หน้าเว็บของผม</p>
       <div class="actions">
         <button id="helloBtn" type="button">Say Hello</button>
         <button id="themeBtn" type="button" class="secondary" aria-pressed="false">🌙 Dark mode</button>
       </div>
-    </header>
+    </div>
 
+    <svg class="waves" viewBox="0 0 2880 120" preserveAspectRatio="none" aria-hidden="true">
+      <path class="wave back" d="M0 50 q180 -50 360 0 t360 0 t360 0 t360 0 t360 0 t360 0 t360 0 t360 0 V120 H0 Z"/>
+      <path class="wave front" d="M0 75 q180 -50 360 0 t360 0 t360 0 t360 0 t360 0 t360 0 t360 0 t360 0 V120 H0 Z"/>
+    </svg>
+  </header>
+
+  <main>
     <section id="about" aria-labelledby="about-title">
       <h2 id="about-title">About Me</h2>
-      <p>
-        นิสิตคณะวิทยาการสารสนเทศ มหาวิทยาลัยบูรพา อาศัยอยู่ที่บางแสน จังหวัดชลบุรี
-        สนใจการพัฒนาซอฟต์แวร์ ปัญญาประดิษฐ์ (AI/ML) และการตลาดดิจิทัล
-        กำลังฝึกสร้างเว็บไซต์และ deploy ผ่าน GitHub Pages ด้วย GitHub Actions
-      </p>
+      <div>
+        <p class="lead">
+          อาศัยอยู่ที่บางแสน ชลบุรี สนใจการพัฒนาซอฟต์แวร์ ปัญญาประดิษฐ์ (AI/ML)
+          และการตลาดดิจิทัล กำลังฝึกสร้างเว็บไซต์และ deploy ผ่าน GitHub Pages ด้วย GitHub Actions
+        </p>
+      </div>
     </section>
 
     <section id="skills" aria-labelledby="skills-title">
       <h2 id="skills-title">Skills</h2>
-      <ul class="skills">
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Python</li>
-        <li>PHP</li>
-        <li>FastAPI</li>
-        <li>MySQL</li>
-        <li>Git / GitHub</li>
-        <li>Google Colab</li>
-        <li>Streamlit</li>
-        <li>Google Ads / Keyword Planner</li>
-      </ul>
+      <dl class="skills">
+        <div>
+          <dt>พัฒนาเว็บ</dt>
+          <dd><span>JavaScript</span><span>React</span><span>PHP</span><span>FastAPI</span><span>MySQL</span></dd>
+        </div>
+        <div>
+          <dt>ข้อมูลและ AI</dt>
+          <dd><span>Python</span><span>Google Colab</span><span>Streamlit</span></dd>
+        </div>
+        <div>
+          <dt>การตลาดดิจิทัล</dt>
+          <dd><span>Google Ads</span><span>Keyword Planner</span></dd>
+        </div>
+        <div>
+          <dt>เครื่องมือ</dt>
+          <dd><span>Git</span><span>GitHub</span></dd>
+        </div>
+      </dl>
     </section>
 
     <section id="contact" aria-labelledby="contact-title">
       <h2 id="contact-title">Contact</h2>
       <ul class="contact">
-        <li>อีเมล: <a href="mailto:67160170@go.buu.ac.th">67160170@go.buu.ac.th</a></li>
-        <li>GitHub: <a href="https://github.com/67160170-commits" target="_blank" rel="noopener">https://github.com/67160170-commits</a></li>
-        <li>ที่อยู่: บางแสน, ชลบุรี</li>
+        <li><span>อีเมล</span><a href="mailto:67160170@go.buu.ac.th">67160170@go.buu.ac.th</a></li>
+        <li><span>GitHub</span><a href="https://github.com/67160170-commits" target="_blank" rel="noopener">github.com/67160170-commits</a></li>
+        <li><span>ที่อยู่</span>บางแสน ชลบุรี</li>
       </ul>
     </section>
-
   </main>
+
+  <footer>สร้างด้วย HTML, CSS และ JavaScript แล้ว deploy ด้วย GitHub Actions</footer>
+
   <script src="script.js"></script>
 </body>
 </html>
