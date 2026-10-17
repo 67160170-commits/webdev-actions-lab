@@ -6,34 +6,33 @@
   <title>67160170 | My Web Development Lab</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500&family=Prompt:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Prompt:wght@600&family=Space+Grotesk:wght@500;700&family=Noto+Sans+Thai:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="hero">
-    <div class="sun" aria-hidden="true"></div>
-
-    <div class="hero-text">
+    <div class="hero-main">
       <h1>Nonthapat<br>Wongkrueason</h1>
       <p class="student">67160170_My Web Development Lab<br>นิสิตคณะวิทยาการสารสนเทศ มหาวิทยาลัยบูรพา</p>
       <p id="status" role="status">สวัสดีครับ ยินดีต้อนรับสู่หน้าเว็บของผม</p>
       <div class="actions">
-        <button id="helloBtn" type="button">Say Hello</button>
-        <button id="themeBtn" type="button" class="secondary" aria-pressed="false">🌙 Dark mode</button>
+        <button id="helloBtn" type="button" class="btn-blue">Say Hello</button>
+        <button id="themeBtn" type="button" class="btn-white" aria-pressed="false">🌙 Dark mode</button>
       </div>
     </div>
 
-    <svg class="waves" viewBox="0 0 2880 120" preserveAspectRatio="none" aria-hidden="true">
-      <path class="wave back" d="M0 50 q180 -50 360 0 t360 0 t360 0 t360 0 t360 0 t360 0 t360 0 t360 0 V120 H0 Z"/>
-      <path class="wave front" d="M0 75 q180 -50 360 0 t360 0 t360 0 t360 0 t360 0 t360 0 t360 0 t360 0 V120 H0 Z"/>
-    </svg>
+    <div class="id-card">
+      <span class="sticker">BUU</span>
+      <span class="id-label">รหัสนิสิต</span>
+      <span class="id-num">67160170</span>
+    </div>
   </header>
 
   <main>
     <section id="about" aria-labelledby="about-title">
-      <h2 id="about-title">About Me</h2>
-      <div>
+      <h2 id="about-title" class="bar coral">About Me</h2>
+      <div class="body">
         <p class="lead">
           อาศัยอยู่ที่บางแสน ชลบุรี สนใจการพัฒนาซอฟต์แวร์ ปัญญาประดิษฐ์ (AI/ML)
           และการตลาดดิจิทัล กำลังฝึกสร้างเว็บไซต์และ deploy ผ่าน GitHub Pages ด้วย GitHub Actions
@@ -42,8 +41,8 @@
     </section>
 
     <section id="skills" aria-labelledby="skills-title">
-      <h2 id="skills-title">Skills</h2>
-      <dl class="skills">
+      <h2 id="skills-title" class="bar blue">Skills</h2>
+      <dl class="body skills">
         <div>
           <dt>พัฒนาเว็บ</dt>
           <dd><span>JavaScript</span><span>React</span><span>PHP</span><span>FastAPI</span><span>MySQL</span></dd>
@@ -64,11 +63,11 @@
     </section>
 
     <section id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Contact</h2>
-      <ul class="contact">
+      <h2 id="contact-title" class="bar yellow">Contact</h2>
+      <ul class="body contact">
         <li><span>อีเมล</span><a href="mailto:67160170@go.buu.ac.th">67160170@go.buu.ac.th</a></li>
         <li><span>GitHub</span><a href="https://github.com/67160170-commits" target="_blank" rel="noopener">github.com/67160170-commits</a></li>
-        <li><span>ที่อยู่</span>บางแสน ชลบุรี</li>
+        <li><span>ที่อยู่</span><b>บางแสน ชลบุรี</b></li>
       </ul>
     </section>
   </main>
